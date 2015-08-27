@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="music">
+  <head>
+    <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/bootstrap.min.js"></link>
+
+  <body ng-controller="ToDoApp">
+
+    <section ng-controller="TodoCtrl">
+      <h1>{{ Do Some Shit Bullshit }}</h1>
+    </section>
+
+    <div>
+      <input type="text" ng-model="macaroni" />
+      <div> {{ macaroni }} </div>
+    </div>
+
+    <div>
+      <ul class="todo-list" ng-repeat="todo in todos">
+        <li>{{todo}} <button ng-click="killTodo(todo)">Delete</button></li>
+      </ul>
+    </div>
+
+</head>
+  
+<script src="../lib/bower_components/angular/angular.min.js"></script>
+
+<script src="app/app.js"></script>
+<script src="app/Todo.js"></script>
+</body>
+</html>
